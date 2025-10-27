@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car & Z Zone</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="bg-[#3A3B48]">
+        <div class="container flex-still mx-auto py-5 px-5 sm:px-0">
+          <div class="logo">
+            <img src="./imgs/logo.png" alt="" />
+          </div>
+          <ul class="gap-10 hidden lg:flex">
+            <li>
+              <a href=""
+                >home <i class="fa-solid fa-chevron-down text-[14px]"></i
+              ></a>
+            </li>
+            <li><a href="">listing</a></li>
+            <li><a href="">car detalies</a></li>
+            <li>
+              <a href=""
+                >pages <i class="fa-solid fa-chevron-down text-[14px]"></i
+              ></a>
+            </li>
+          </ul>
+          <div class="btns flex gap-10 items-center">
+            <div
+              class="shop relative transition duration-500 ease-in-out cursor-pointer hover:scale-95 hidden sm:flex"
+            >
+              <div
+                class="absolute w-2 h-2 rounded-full bg-primary right-[-2px] top-0"
+              ></div>
+              <i
+                class="text-textColor text-[16px] fa-solid fa-cart-shopping"
+              ></i>
+            </div>
+            <form
+              class="relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-primary after:bottom-[-5px] after:left-0 aftr:transition after:duration-500 after:w-full hidden sm:flex"
+              action=""
+            >
+              <input
+                class="py-1 pl-8 font-DMsans font-light text-[15px] leading-[100%] text-[#9899A6] outline-none"
+                type="text"
+                placeholder=" Search Here..."
+              />
+              <i
+                class="absolute left-0 top-[6px] text-textColor text-[16px] cursor-pointer fa-solid fa-magnifying-glass"
+              ></i>
+            </form>
+            <div class="hamburger lg:hidden">
+              <i
+                class="text-white text-[16px] text-[18px] cursor-pointer hover:text-textColor transition duration-500 fa-solid fa-bars"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="hero bg-[#30313E]">
+        <div
+          class="container mx-auto flex-still flex-col py-15 px-5 sm:px-0 md:flex-row"
+        >
+          <div class="info md:w-[60%]">
+            <span
+              class="flex gap-3 font-Outfit font-bold text-[19px] uppercase text-[#FEFEFE] mb-5"
+            >
+              <img src="./imgs/heroIcon.png" alt="" />
+              Over 4000 Latest Cars
+            </span>
+            <h1>
+              discover the ease of
+              <span class="text-primary">getting your dream</span> car with
+              quality
+            </h1>
+          </div>
+          <div class="col md:w-[30%]">
+            <p class="text-[19px] mb-10">
+              Nam libero tempore, cum soluta nobis est eligendi optio cumque
+              nihil impedit quo minus id quod maxime placeat facere.
+            </p>
+            <button
+              class="relative overflow-hidden after:content-[''] after:absolute after:left-0 after:top-0 after:h-full after:w-0 hover:after:w-full after:bg-primary after:transition-all after:duration-300 after:-z-0 z-10"
+            >
+              <span class="relative z-10">MORE INFORMATION</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section
+        class="customer bg-[#31323D] bg-[url(/imgs/customerbg.png)] bg-center bg-cover bg-no-repeat"
+      >
+        <div
+          class="container mx-auto relative flex flex-col py-15 pb-70 px-5 sm:px-0"
+        >
+          <div class="info w-[80%]">
+            <div class="card mb-5 flex gap-10 flex-wrap">
+              <div class="box">
+                <h1 class="font-medium mb-2 text-primary text-[42px]">900+</h1>
+                <h4 class="text-[#FEFEFE]">Happy Clients</h4>
+              </div>
+              <div class="box">
+                <h1 class="font-medium mb-2 text-primary text-[42px]">900+</h1>
+                <h4 class="text-[#FEFEFE]">Happy Clients</h4>
+              </div>
+              <div class="box">
+                <h1 class="font-medium mb-2 text-primary text-[42px]">900+</h1>
+                <h4 class="text-[#FEFEFE]">Happy Clients</h4>
+              </div>
+            </div>
+            <p class="md:w-[48%]">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              velit.
+            </p>
+            <div class="col mt-70 sm:mt-100">
+              <h5
+                class="font-Outfit font-bold text-[15px] leading-[100%] tracking-[10%] text-[#FEFEFE] mb-5"
+              >
+                Get To know More:
+              </h5>
+              <div class="icon flex gap-5">
+                <i
+                  class="text-[#FEFEFE] cursor-pointer transition-all duration-500 ease-in-out hover:text-primary fa-brands fa-facebook-f"
+                ></i>
+                <i
+                  class="text-[#FEFEFE] cursor-pointer transition-all duration-500 ease-in-out hover:text-primary fa-brands fa-twitter"
+                ></i>
+                <i
+                  class="text-[#FEFEFE] cursor-pointer transition-all duration-500 ease-in-out hover:text-primary fa-brands fa-instagram"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="image w-[80%] absolute right-0 top-[300px] sm:top-25">
+            <img class="w-full" src="./imgs/heroCar.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="search relative flex justify-center">
+        <div
+          class="container mx-auto bg-[#D9D9D9] py-15 px-5 absolute top-[-200px]"
+        >
+          <h2>Quick Vehicle Search</h2>
+          <form
+            class="mt-10 grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-10 md:grid-cols-3"
+            action=""
+          >
+            <div class="inputBtn grid gap-2 relative">
+              <h4>Vehicle Body Type</h4>
+              <input
+                class="font-DMsans font-light text-[15px] leading-[100%] text-[#9899A6] py-3 px-4 bg-[#FEFEFE] outline-none mt-1"
+                type="text"
+                placeholder="All Models"
+              />
+              <i class="absolute top-11 right-2 fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="inputBtn grid gap-2 relative">
+              <h4>Models Of The Vehicle</h4>
+              <input
+                class="font-DMsans font-light text-[15px] leading-[100%] text-[#9899A6] py-3 px-4 bg-[#FEFEFE] outline-none mt-1"
+                type="text"
+                placeholder="All Models"
+              />
+              <i class="absolute top-11 right-2 fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="inputBtn grid gap-2 relative">
+              <h4>Conditions</h4>
+              <input
+                class="font-DMsans font-light text-[15px] leading-[100%] text-[#9899A6] py-3 px-4 bg-[#FEFEFE] outline-none mt-1"
+                type="text"
+                placeholder="Vehicles Conditions"
+              />
+              <i class="absolute top-11 right-2 fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="inputBtn grid gap-2 relative">
+              <h4>Brand</h4>
+              <input
+                class="font-DMsans font-light text-[15px] leading-[100%] text-[#9899A6] py-3 px-4 bg-[#FEFEFE] outline-none mt-1"
+                type="text"
+                placeholder="All Brand"
+              />
+              <i class="absolute top-11 right-2 fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="inputBtn grid gap-2 relative">
+              <h4>Years</h4>
+              <input
+                class="font-DMsans font-light text-[15px] leading-[100%] text-[#9899A6] py-3 px-4 bg-[#FEFEFE] outline-none mt-1"
+                type="text"
+                placeholder="Year Range"
+              />
+              <i class="absolute top-11 right-2 fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="inputBtn grid gap-2 relative">
+              <h4>Price range</h4>
+              <input
+                class="font-DMsans font-light text-[15px] leading-[100%] text-[#9899A6] py-3 px-4 bg-[#FEFEFE] outline-none mt-1"
+                type="text"
+                placeholder="Price Range"
+              />
+              <i class="absolute top-11 right-2 fa-solid fa-chevron-down"></i>
+            </div>
+          </form>
+          <div class="btn flex justify-end mt-10">
+            <button type="submit"
+              class="relative overflow-hidden after:content-[''] after:absolute after:left-0 after:top-0 after:h-full after:w-0 hover:after:w-full after:bg-primary after:transition-all after:duration-300 after:-z-0 z-10"
+            >
+              <span class="relative z-10">FIND IT NOW</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="services mt-80">
+        <div class="container mx-auto py-15 px-5 sm:px-0">
+          <div class="info flex-still mb-15">
+            <h2>We Provide Best Vehicles Solution & Awesome Services</h2>
+            <p>
+              Car Dealer is the most enticing, creative, modern and multipurpose
+              auto dealer Premium WordPress Theme. Suitable for.
+            </p>
+          </div>
+          <div class="card">
+            <div class="box-1 bg-[#6B6C79]">
+                <div class="image">
+                    <img src="./imgs/serviceImg.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>we are very competent in this field</h3>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</p>
+                    <button>lEARN MORE</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="col">
+                    <div class="imgs">
+                        <img src="./imgs/serviceIcon1.png" alt="">
+                    </div>
+                    <h3>Engine <br> Management</h3>
+                </div>
+                <p>Aliquid illo similique minima magni quidem sequi corporis fugiat type and</p>
+                <button>Read more <i class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about"></section>
+      <section class="blog"></section>
+      <section class="shop"></section>
+      <section cxlass="client"></section>
+      <section class="contact"></section>
+    </main>
+    <footer></footer>
+    <!-- <i class="text-red-700 fas fa-car"></i>
+    <i class="text-red-700 fa-solid fa-gear"></i>
+    <i class="text-red-700 fas fa-gas-pump"></i> -->
+  </body>
+</html>
