@@ -6,44 +6,56 @@
 @theme {
   --font-Outfit: "Outfit", sans-serif;
   --font-DMsans: "DM Sans", sans-serif;
-  --color-textColor: #A6A6A6;
-  --color-primary: #DD2F30;
+  --color-textColor: #a6a6a6;
+  --color-primary: #dd2f30;
   --color-titleColor: #121212;
 }
 
-@layer components{
-    .flex-still{
-        @apply flex justify-between items-center gap-5;
+@layer components {
+  .flex-still {
+    @apply flex justify-between items-center gap-5;
+  }
+  .hero-btn {
+    @apply flex items-center gap-2 py-2 pr-20 border-b font-DMsans font-light text-[15px] leading-[100%] text-[#9899A6] cursor-pointer;
+  }
+  @keyframes animate1 {
+    0%,
+    100% {
+      transform: scale(1);
     }
-    .hero-btn{
-        @apply flex items-center gap-2 py-2 pr-20 border-b font-DMsans font-light text-[15px] leading-[100%] text-[#9899A6] cursor-pointer;
+    50% {
+      transform: scale(1.05);
+      background-color: #f43f5e;
     }
+  }
 }
 
-@layer base{
-    a{
-        @apply font-Outfit font-medium text-[16px] leading-[100%] tracking-[1px] capitalize text-textColor transition-all duration-500 ease-in-out hover:text-primary;
-    }
-    p{
-        @apply font-DMsans font-light text-[15px] leading-[160%] tracking-[1%] text-textColor;
-    }
-    button{
-        @apply font-Outfit font-medium text-[15px] leading-[100%]  text-primary py-3 px-5 border border-primary cursor-pointer transition-all duration-400 ease-in-out hover:text-[#FEFEFE];
-    }
-    h1{
-        @apply font-Outfit font-semibold text-[42px] leading-[110%] tracking-[1%] text-[#FEFEFE] capitalize mb-5 md:text-[72px];
-    }
-    h2{
-        @apply font-Outfit font-medium text-[34px] leading-[110%] tracking-[1%] text-titleColor sm:text-[42px];
-    }
-    h3{
-        @apply font-Outfit font-normal text-[22px] leading-[100%] text-titleColor;
-    }
-    h4{
-        @apply font-Outfit font-normal text-[19px] leading-[100%] tracking-[1%] text-titleColor;
-    }
-    /* h5{
+@layer base {
+  a {
+    @apply font-Outfit font-medium text-[16px] leading-[100%] tracking-[1px] capitalize text-textColor transition-all duration-500 ease-in-out hover:text-primary;
+  }
+  p {
+    @apply font-DMsans font-light text-[15px] leading-[160%] tracking-[1%] text-textColor;
+  }
+  button {
+    @apply font-Outfit font-medium text-[15px] leading-[100%]  text-primary py-3 px-5 border border-primary cursor-pointer transition-all duration-400 ease-in-out hover:text-[#FEFEFE];
+  }
+  h1 {
+    @apply font-Outfit font-semibold text-[42px] leading-[110%] tracking-[1%] text-[#FEFEFE] capitalize mb-5 md:text-[72px];
+  }
+  h2 {
+    @apply font-Outfit font-medium text-[34px] leading-[110%] tracking-[1%] text-titleColor sm:text-[42px];
+  }
+  h3 {
+    @apply font-Outfit font-normal text-[22px] leading-[100%] text-titleColor;
+  }
+  h4 {
+    @apply font-Outfit font-normal text-[19px] leading-[100%] tracking-[1%] text-titleColor;
+  }
+  /* h5{
         @apply ;
     } */
+     h6{
+        @apply font-DMsans font-light text-[15px] leading-[160%] tracking-[1%] text-textColor;
+     }
 }
-
