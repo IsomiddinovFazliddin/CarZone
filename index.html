@@ -426,14 +426,16 @@
               </div>
             </div>
             <div
-              class="grid grid-cols-[160px_1fr] items-center gap-5 justify-center"
+              class="flex gap-5 flex-wrap items-center"
             >
-              <button
-                class="relative overflow-hidden after:content-[''] after:absolute after:left-0 after:top-0 after:h-full after:w-0 hover:after:w-full after:bg-primary after:transition-all after:duration-300 after:z-0 z-10 hover:shadow-lg shadow-[#DD2F3066]"
+              <div>
+                <button
+                class="relative w-[150px] overflow-hidden after:content-[''] after:absolute after:left-0 after:top-0 after:h-full after:w-0 hover:after:w-full after:bg-primary after:transition-all after:duration-300 after:z-0 z-10 hover:shadow-lg shadow-[#DD2F3066]"
               >
                 <span class="relative z-10">LEARN MORE</span>
               </button>
-              <div class="border-l w-full border-[#9899A6] pl-5">
+              </div>
+              <div class="border-l border-[#9899A6] pl-5">
                 <h4>Trusted By 900+</h4>
                 <h6
                   class="font-DMsans font-light text-[15px] leading-[160%] tracking-[1%] text-textColor mt-2"
@@ -780,13 +782,13 @@
           <h2 class="text-[#FEFEFE] mb-20">What Our Client Say's</h2>
           <div class="card flex-still">
             <div
-              class="group w-10 h-10 rounded-full border border-primary flex justify-center items-center cursor-pointer transition-all duration-500 ease-in-out hover:bg-primary"
+              class="group w-10 h-10 rounded-full border border-primary flex justify-center items-center cursor-pointer transition-all duration-500 ease-in-out hover:bg-primary hidden sm:flex"
             >
               <i
                 class="text-primary transition-all duration-500 group-hover:text-white fa-solid fa-chevron-left"
               ></i>
             </div>
-            <div class="box bg-[#FEFEFE] w-1/2 p-5">
+            <div class="box bg-[#FEFEFE] w-full sm:w-1/2 p-5">
               <div class="image flex justify-center mb-5">
                 <img
                   class="rounded-full border-3 border-primary cursor-pointer"
@@ -809,7 +811,7 @@
               <h6 class="mt-2">Customer</h6>
             </div>
             <div
-              class="group w-10 h-10 rounded-full border border-primary flex justify-center items-center cursor-pointer transition-all duration-500 ease-in-out hover:bg-primary"
+              class="group w-10 h-10 rounded-full border border-primary flex justify-center items-center cursor-pointer transition-all duration-500 ease-in-out hover:bg-primary hidden sm:flex"
             >
               <i
                 class="text-primary transition-all duration-500 group-hover:text-white fa-solid fa-chevron-right"
@@ -914,7 +916,7 @@
     </main>
     <footer class="bg-[#060B1D]">
         <div class="container mx-auto py-20 px-5 sm:px-0">
-            <div class="card flex-still flex-col sm:flex-row sm:flex-wrap items-start mb-10">
+            <div class="card flex-still flex-col sm:flex-row items-start mb-10">
                 <div class="box w-full md:w-1/4">
                     <img class="mb-5" src="./imgs/logo.png" alt="">
                     <p class="mb-5">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
@@ -954,7 +956,7 @@
                         <li class="font-Outfit font-normal text-[19px] leading-[100%] tracking-[1%] text-[#FEFEFE] mb-3 cursor-pointer transition-all duration-500 hover:text-primary marker:text-primary">Checkout</li>
                     </ul>
                 </div>
-                <div class="box w-full md:w-1/5">
+                <div class="box w-full md:w-[200px]">
                     <h3 class="text-[#FEFEFE] capitalize mb-5">Newsletter</h3>
                     <div class="mb-5">
                         <div class="w-15 h-1 bg-[#9899A6]"></div>
@@ -962,8 +964,12 @@
                     </div>
                     <p class="mb-5">Subscribe to our newsletter and stay updated.</p>
                     <form class="grid" action="">
-                        <input class="font-DMsans font-light text-[15px] leading-[160%] tracking-[1%] text-[#9899A6] bg-[#D9D9D9] py-2 px-3 outline-none mb-5" type="email" placeholder="Your Email..." required>
-                        <button class="relative overflow-hidden after:content-[''] after:absolute after:left-0 after:top-0 after:h-full after:w-0 hover:after:w-full after:bg-primary after:transition-all after:duration-300 after:z-0 z-10 hover:shadow-lg shadow-[#DD2F3066]" type="submit"><span class="relative z-10"><i class="fa-solid fa-paper-plane"></i> SUBSCRIBE NOW</span></button>
+                        <div>
+                            <input class="font-DMsans font-light text-[15px] leading-[160%] tracking-[1%] text-[#9899A6] bg-[#D9D9D9] py-2 px-3 outline-none mb-5" type="email" placeholder="Your Email..." required>
+                        </div>
+                        <div>
+                            <button class="relative overflow-hidden after:content-[''] after:absolute after:left-0 after:top-0 after:h-full after:w-0 hover:after:w-full after:bg-primary after:transition-all after:duration-300 after:z-0 z-10 hover:shadow-lg shadow-[#DD2F3066]" type="submit"><span class="relative z-10"><i class="fa-solid fa-paper-plane"></i> SUBSCRIBE NOW</span></button>
+                        </div>
                     </form>
                 </div>
             </div>
